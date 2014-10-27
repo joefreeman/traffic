@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.controls {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

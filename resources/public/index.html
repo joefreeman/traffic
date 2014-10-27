@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/traffic.css">
+</head>
+<body>
+  <div class="viewport"></div>
+  <script src="/static/js/jquery-2.0.3.js"></script>
+  <script src="/static/js/underscore-1.5.2.js"></script>
+  <script src="/static/js/backbone-1.0.0.js"></script>
+  <script src="/static/js/kinetic-4.7.4.js"></script>
+  <script src="/static/js/traffic/init.js"></script>
+  <script src="/static/js/traffic/utils.js"></script>
+  <script src="/static/js/traffic/model/world.js"></script>
+  <script src="/static/js/traffic/view/world.js"></script>
+  <script src="/static/js/traffic/view/controls.js"></script>
+  <script src="/static/js/traffic/connection.js"></script>
+  <script src="/static/js/traffic/application.js"></script>
+  <script>
+  jQuery(function($) {
+    jQuery(function($) {
+      window.app = new Traffic.Application({target: $('.viewport')});
+      Backbone.history.start();
+    });
+  });
+  </script>
+</body>
+</html>
